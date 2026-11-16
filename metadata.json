@@ -1,0 +1,6 @@
+{
+  "name": "WatchParty — Cinema Social",
+  "description": "A social movie platform to discover films, write reviews, build watchlists, and join synchronized watch parties with live chat.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
