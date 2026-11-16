@@ -13,9 +13,10 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          persist-credentials: false
 
       - name: Push to Second GitHub
         env:
           DEST_TOKEN: ${{ secrets.SECOND_GITHUB_TOKEN }}
         run: |
-          git push --force https://${DEST_TOKEN}@github.com/engineersa277/WatchParty-Updated.git HEAD:main
+          git push --force https://engineersa277:${DEST_TOKEN}@github.com/engineersa277/WatchParty-Updated.git HEAD:main
